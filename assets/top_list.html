@@ -1,0 +1,5 @@
+<div ng-controller="top_list_controller" class="top_list">
+	<p ng-repeat="user in users | orderBy:'score':!reverse | limitTo: 10">
+		{{user.name}} {{user.score}}
+	</p>
+</div>
